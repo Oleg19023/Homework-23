@@ -1,7 +1,7 @@
 const secretNumber = Math.floor(Math.random() * 100) + 1;
 
-let attempts = 9;
-let roundNumber = 1;
+let attempts = 10;
+let roundNumber = 0;
 const guessedNumbers = [];
 
 function guessNumber() {
@@ -12,7 +12,7 @@ function guessNumber() {
     const imageElement = document.getElementById("resultImage");
 
     if (guessButton.disabled) {
-        resultMessage.textContent = "Игра окончена. Вы использовали все 10 попыток.";
+        resultMessage.textContent = "Игра окончена.";
         return;
     }
 
